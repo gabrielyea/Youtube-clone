@@ -34,11 +34,42 @@
 }
 
 .main-container{
+    min-height: 1000px;
+    padding:40px;
     display: grid;
-    grid-template-columns: 2fr, 1fr;
-    grid-template-rows: 1fr;
+    gap: 10px;
+    grid-template-columns: 4fr 1fr ;
+    grid-template-rows: 4fr 4fr 1fr 1fr;
+    grid-template-areas: 
+        "video recomendation"
+        "video recomendation"
+        "stats recomendation"
+        "info  recomendation"
 
 }
+
+.video-container{
+    background-color: aqua;
+    grid-area: video;
+
+}
+
+.video-stats{
+    background-color:azure;
+    grid-area: stats;
+}
+
+.video-info{
+    background-color: blueviolet;
+    grid-area: info;
+}
+
+.recomendation-container{
+    background-color: tomato;
+    grid-area: recomendation;
+
+}
+
  body{
      background-color: black;
  }
