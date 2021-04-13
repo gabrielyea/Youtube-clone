@@ -43,6 +43,7 @@
     display: grid;
     gap: 10px;
     margin-top: 80px;
+    margin-left: 100px;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 4fr 4fr 1fr 1fr;
     grid-template-areas: 
@@ -66,12 +67,28 @@
 }
 
 .video-stats{
-    background-color:azure;
+    display: flex;
+    justify-content: space-between;
     grid-area: stats;
+    color:gray;
+
+}
+
+.video-stats .general{
+    color:white;
+}
+
+.video-stats .social{
+    margin-top: 50px;
+    display:flex;
+    flex-direction: row;
+}
+
+.video-stats .social p{
+    padding-left: 10px;
 }
 
 .video-info{
-    background-color: blueviolet;
     grid-area: info;
 }
 
@@ -96,6 +113,37 @@
     color:white;
 }
 
+.video-info .top{
+    display:flex;
+    justify-content: space-between;
+}
+
+.top-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color:grey;
+}
+
+.top-2 img{
+    align-self: center;
+    justify-self: left;
+}
+
+.data{
+    height: 50px;
+    align-self: center;
+    font-size: medium;
+    padding-bottom: 50px;
+}
+
+.subscribe-b{
+    font-size: large;
+    color:white;
+    background-color: red;
+    border-radius: 10%;
+    border:none;
+    max-height: 50px;
+}
  body{
      background: #181818;
  }
