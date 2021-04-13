@@ -35,10 +35,10 @@
 
 .main-container{
     min-height: 1000px;
-    padding:40px;
     display: grid;
     gap: 10px;
-    grid-template-columns: 4fr 1fr ;
+    margin-top: 50px;
+    grid-template-columns: 4fr 1fr;
     grid-template-rows: 4fr 4fr 1fr 1fr;
     grid-template-areas: 
         "video recomendation"
@@ -65,13 +65,23 @@
 }
 
 .recomendation-container{
+    display: grid;
+    gap: 20px;
     background-color: tomato;
     grid-area: recomendation;
 
 }
 
+.recomendation-content{
+    background-color: burlywood;
+    justify-self: center;
+    align-self: center;
+    width: 350px;
+    height: 200px;
+}
+
  body{
-     background-color: black;
+     background: black;
  }
 
  
