@@ -2,26 +2,32 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    color: aliceblue;
-    background-color: #333;
+    align-items: center;
+    background-color: #202020;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    max-height: 50px;
+    max-height: max-content;
     width: 100%;
   }
 
 .n-1{
-    background-color: wheat;
-    align-items: stretch;
-    
+    background-color: #202020;
 }
 
 .n-2{
-    background-color: pink;
+    background-color: #202020;
 }
 
 .n-3{
-    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+}
+.n-3 img{
+    margin: 10px;
+
 }
 
 .navbar a {
@@ -29,7 +35,6 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
@@ -37,7 +42,7 @@
     min-height: 1000px;
     display: grid;
     gap: 10px;
-    margin-top: 50px;
+    margin-top: 80px;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 4fr 4fr 1fr 1fr;
     grid-template-areas: 
@@ -54,6 +59,12 @@
 
 }
 
+.video-container iframe{
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
 .video-stats{
     background-color:azure;
     grid-area: stats;
@@ -66,22 +77,27 @@
 
 .recomendation-container{
     display: grid;
+    height: max-content;
     gap: 20px;
-    background-color: tomato;
     grid-area: recomendation;
-
 }
 
 .recomendation-content{
-    background-color: burlywood;
-    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.recomendation-content img{
     align-self: center;
-    width: 350px;
-    height: 200px;
+}
+
+.recomendation-content .info{
+    font-size: small;
+    color:white;
 }
 
  body{
-     background: black;
+     background: #181818;
  }
 
  
